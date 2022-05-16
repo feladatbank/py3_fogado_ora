@@ -60,4 +60,5 @@ class Fogado_ora:
     self.foglalas_ido = foglalas_ido
 
 with open("fogado.txt","r",encoding="utf-8") as f:
+  f.readline()
   lista = [Fogado_ora(sor) for sor in f]
