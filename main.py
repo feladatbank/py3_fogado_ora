@@ -67,3 +67,18 @@ with open("fogado.txt","r",encoding="utf-8") as f:
 
 print(f"3.feladat\nFoglalások száma: {len(lista)}")
 print()
+
+#4
+
+bekeres = input("4.feladat\nAdjon meg egy nevet: ")
+szeletelo = bekeres.split(" ")
+
+#Nagy Ferenc 17:00 2017.10.28-21:30
+
+kereso = len([sor for sor in lista if sor.vezetek == szeletelo[0] and sor.uto ==  szeletelo[1]])
+
+if kereso:
+  print(f"{bekeres} néven {kereso} időpontfoglalás van.")
+else:
+  print("A megadott néven nincs időpontfoglalás.")
+print()
