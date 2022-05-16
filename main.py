@@ -82,3 +82,12 @@ if kereso:
 else:
   print("A megadott néven nincs időpontfoglalás.")
 print()
+
+#5
+
+bekeres2 = input("5.feladat\nAdjon meg egy érvényes időpontot (pl. 17:10): ")
+
+kereso2 = [(sor.vezetek,sor.uto) for sor in lista if sor.lefoglalt_ido == bekeres2]
+#kereso2.sort()
+
+[print(f"{sor[0]} {sor[1]}") for sor in kereso2]
