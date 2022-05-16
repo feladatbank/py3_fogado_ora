@@ -62,3 +62,8 @@ class Fogado_ora:
 with open("fogado.txt","r",encoding="utf-8") as f:
   f.readline()
   lista = [Fogado_ora(sor) for sor in f]
+
+#3
+
+print(f"3.feladat\nFoglalások száma: {len(lista)}")
+print()
