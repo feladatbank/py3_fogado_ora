@@ -48,3 +48,16 @@ __________________________________________________
 """
 
 
+#1-2
+
+
+class Fogado_ora:
+  def __init__(self,sor):
+    vezetek,uto,lefoglalt_ido,foglalas_ido = sor.strip().split(" ")
+    self.vezetek = vezetek
+    self.uto = uto
+    self.lefoglalt_ido = lefoglalt_ido
+    self.foglalas_ido = foglalas_ido
+
+with open("fogado.txt","r",encoding="utf-8") as f:
+  lista = [Fogado_ora(sor) for sor in f]
